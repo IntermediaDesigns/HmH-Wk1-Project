@@ -3,6 +3,7 @@
 * {
        background-color: white;
        margin: 0;
+       
 }
 
 /* Light Mode */
@@ -12,7 +13,10 @@
               background-color: #ffffff;
        }
 
-       
+       .yt__header {
+              box-shadow: 0px 13px 10px -15px #3e3d3d;
+              margin: 0;              
+       }
 
        #yname {
               color: black;
@@ -26,18 +30,15 @@
        #bar__btn1 {
               background-color: rgb(92, 89, 89);
               border-radius:6px;
-              cursor:pointer;
               color:#ffffff;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
               padding: 6px 18px;
-              
        }
        
        #bar__btn2 {
               background-color:#ffffff;
               border-radius:6px;
-              cursor:pointer;
               color:#000000;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
@@ -45,9 +46,10 @@
               margin-right: 2px;
        }
 
-       #video__title {
-              color: #000000;
+       .ytuber__nav {
+              border-bottom: #e1e4ea solid 5px;
        }
+       
 }
 
 /* Dark Mode */
@@ -56,7 +58,7 @@
               background-color: black;
        }
 
-       .header {
+       .yt__header {             
               color: #ffffff;
        }
 
@@ -65,54 +67,70 @@
        }
 
        .yt__footer {
-              color: #ffffff;
-              
+               color: #ffffff;
        }
 
-       #img__icon1 {
-              fill: #ffffff;
+       .fa-ellipsis-vertical {
               color: #ffffff;
        }
 
        #img__icon {
               fill: #ffffff;
        }
-       
 
        #video__title {
                      color: #ffffff;
        }
 
-       #yname {
+       #ytuber__name {
               color: rgb(255, 255, 255);
-              
+       }
+
+       #view__subs {
+              color: rgb(190, 188, 188);
        }
 
        #bar__btn1 {
-              background-color:#000000;
+              background-color:#ffffff;
               border-radius:6px;
-              cursor:pointer;
-              color:#ffffff;
+              color:#000000;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
-              padding: 6px 18px;
-              
+              padding: 6px 18px;     
        }
        
        #bar__btn2 {
-              background-color:#ffffff;
+              background-color:#000000;
               border-radius:6px;
-              cursor:pointer;
-              color:#000000;
+              color:#ffffff;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
               padding:6px 16px;
               margin-right: 2px;
        }
+
+       h3 {
+              color: white;
+       }
+
+       .ytuber__nav {
+              border-bottom: #3e3d3d solid 5px;
+       }
 }
 
+/* -----------Content------------- */
+
+
 /* Navbar Header */
-.header {
+#navbar {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       transition: top 0.5s;
+       height: 100px;
+}
+
+.yt__header {
        display: flex;
        flex-direction: row;
        justify-content: space-between;
@@ -136,55 +154,6 @@
 
 }
 
-
-
-/*  Second Header */
-.header2 {
-       display: flex;
-       flex-direction: row;
-       flex-wrap: nowrap;
-       gap: 30px;
-       margin-top: 20px;
-       justify-content: space-evenly;
-}
-
-.navbar {
-       display: flex;       
-}
-
-#compass {
-       margin-left: 20px;
-       display: flex;
-}
-
-.nav__btn {
-       display: flex-end;      
-}
-
-
-
-/* 1st YouTube Video */
-.youtube__vid {
-       display: flex;
-       
-}
-
-.yt__banner {
-       display: flex;
-      margin-top: 20px;
-}
-
-.video__description {
-       display: flex;
-}
-
-
-
-#thumbnails {
-       border-radius: 50%;
-       display: flex;
-}
-
 #yname {
        display: flex;
        font-family: 'Barlow Condensed', sans-serif;
@@ -194,12 +163,140 @@
        padding-left: 2px
 }
 
-#ytuber__name {
+/*  Second Header */
+.header2 {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       margin-top: 20px;
+       justify-content: space-between;
+       align-items: center;
+       padding-left: 20px;
+}
 
+.navbar2 {
+       display: flex;       
+}
+
+#compass {
+       padding-left: 20px;
+       display: flex;
+}
+
+.nav__btn {
+       display: flex-end;      
+}
+
+#bar__btn2 {
+       
+}
+
+
+/* 1st YouTube Video */
+.youtube__vid {
+       display: flex;       
+}
+
+.yt__banner {
+       display: flex;
+       margin-top: 105px;
+}
+
+#ytuber {
+       object-fit: cover;
+       width: 100%;
+}
+
+
+#video__title {
+       font-family: 'arial', sans-serif;
+       font-weight: 300;
+       font-size: 12px;
+       display: flex;
+       text-wrap: wrap;
+}
+
+.ytuber__nav {
+       display: flex;
+       padding: 15px;
+       justify-content: space-between;
+       align-items: center;
+}
+
+.yt__left {
+       display: flex;
+       
+}
+
+#thumbnails {
+       border-radius: 50%;
+       display: flex;
+       
+}
+
+
+.yt__info { 
+       flex-wrap: wrap;
+       display: flex;
+       align-content: center;
+       padding-left: 15px;
+}
+
+#video__title {
+       padding-bottom: 5px;
 }
 
 #view__subs {
-
+       display: flex;
+       font-family: 'arial', sans-serif;
+       font-size: 12px;
+       font-weight: 400;
 }
 
+.fa-ellipsis-vertical {
+       display: flex;
+       
+}
+
+/* -------Shorts -------- */
+.yt__shorts {
+       display: flex;
+       align-items: center;
+       padding: 15px;
+}
+#red__shorts {
+      padding-right: 10px;
+}
+
+h3 {
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 300;
+       font-size: 16px;
+}
+
+.video_shorts {
+       display: flex;
+       
+}
+
+.iframe {
+       display: flex;
+       justify-content: flex-start;
+       gap: .5rem;
+       padding-left: 15px;
+}
+
+
+
+/* ------- Footer ------ */
+.footer {
+       margin-top: 50vh;
+}
+
+.yt__footer {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+}
 

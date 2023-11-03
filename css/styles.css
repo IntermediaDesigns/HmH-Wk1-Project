@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-       background-color: white;
+       background-color: white;     
+}
+
+.body{
        margin: 0;
-       
+       padding: 0;
 }
 
 /* Light Mode */
 
 @media (prefers-color-scheme: light) {
        * {
-              background-color: #ffffff;
+              background-color: #FFFFFF;
        }
 
        .yt__header {
@@ -19,7 +22,7 @@
        }
 
        #yname {
-              color: black;
+              color: #0F0F0F;
               font-family: 'Barlow Condensed', sans-serif;
               font-size: 24px;
               font-weight: 400;
@@ -30,24 +33,26 @@
        #bar__btn1 {
               background-color: rgb(92, 89, 89);
               border-radius:6px;
-              color:#ffffff;
+              color:#FFFFFF;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
               padding: 6px 18px;
+              text-decoration: none;
        }
        
        #bar__btn2 {
-              background-color:#ffffff;
+              background-color:#e1e4ea;
               border-radius:6px;
-              color:#000000;
+              color:#0F0F0F;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
               padding:6px 16px;
               margin-right: 2px;
+              text-decoration: none;
        }
 
        .ytuber__nav {
-              border-bottom: #e1e4ea solid 5px;
+              border-bottom: #dedede solid 5px;
        }
        
 }
@@ -55,66 +60,71 @@
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
        * {
-              background-color: black;
+              background-color: #0F0F0F;
        }
 
        .yt__header {             
-              color: #ffffff;
+              color: #FFFFFF;
        }
 
        .header2 {
-              color: #ffffff;
+              color: #FFFFFF;
        }
 
        .yt__footer {
-               color: #ffffff;
+               color: #FFFFFF;
        }
 
        .fa-ellipsis-vertical {
-              color: #ffffff;
+              color: #FFFFFF;
        }
 
        #img__icon {
-              fill: #ffffff;
+              fill: #FFFFFF;
        }
 
        #video__title {
-                     color: #ffffff;
+                     color: #FFFFFF;
        }
 
        #ytuber__name {
-              color: rgb(255, 255, 255);
+              color: #FFFFFF;
        }
 
        #view__subs {
-              color: rgb(190, 188, 188);
+              color: rgb(209, 206, 206);
        }
 
        #bar__btn1 {
-              background-color:#ffffff;
+              background-color:#e1e4ea;
               border-radius:6px;
-              color:#000000;
+              color:#0F0F0F;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
-              padding: 6px 18px;     
+              padding: 6px 18px;
+              text-decoration: none;     
        }
        
        #bar__btn2 {
-              background-color:#000000;
+              background-color:#0F0F0F;
               border-radius:6px;
-              color:#ffffff;
+              color:#FFFFFF;
               font-family: 'Roboto', sans-serif;
               font-size:15px;
               padding:6px 16px;
               margin-right: 2px;
+              text-decoration: none;
        }
 
        h3 {
-              color: white;
+              color: #FFFFFF;
        }
 
        .ytuber__nav {
               border-bottom: #3e3d3d solid 5px;
+       }
+       .bar__footer {
+              color: #FFFFFF;
        }
 }
 
@@ -127,7 +137,7 @@
        top: 0;
        width: 100%;
        transition: top 0.5s;
-       height: 100px;
+       height: 150px;
 }
 
 .yt__header {
@@ -135,18 +145,19 @@
        flex-direction: row;
        justify-content: space-between;
        flex-wrap: nowrap;
-       margin: 5px; 
-       padding-top: 8px;
+       padding: 0px 15px 0px 15px;
        align-items: center;
 }
 
 .left {
        display: flex;
+       align-items: center;
 }
 
 .right {
        display: flex-end;
-       padding-right: 10px;       
+       padding-right: 10px;
+       justify-content: center;       
 }
 
 .fa-magnifying-glass {
@@ -199,7 +210,7 @@
 
 .yt__banner {
        display: flex;
-       margin-top: 105px;
+       margin-top: 145px;
 }
 
 #ytuber {
@@ -207,43 +218,45 @@
        width: 100%;
 }
 
-
-#video__title {
-       font-family: 'arial', sans-serif;
-       font-weight: 300;
-       font-size: 12px;
-       display: flex;
-       text-wrap: wrap;
-}
-
 .ytuber__nav {
        display: flex;
-       padding: 15px;
-       justify-content: space-between;
+       padding: 5px 20px 5px 20px;
+       justify-content:space-evenly;
        align-items: center;
 }
 
 .yt__left {
        display: flex;
-       
+       align-items: center;
 }
 
 #thumbnails {
        border-radius: 50%;
        display: flex;
-       
+       align-items: center;
+       padding-bottom: 10px;
+       padding-top: 10px;
 }
-
 
 .yt__info { 
        flex-wrap: wrap;
        display: flex;
        align-content: center;
-       padding-left: 15px;
+       padding-left: 10px;
+       padding-right: 10px;
+       margin: 0;
+       align-items: center;
 }
 
 #video__title {
-       padding-bottom: 5px;
+       font-family: 'arial', sans-serif;
+       font-weight: 700;
+       font-size: 14px;
+       display: flex;
+       margin: 0;
+       padding-top: 10px;
+       padding-left: 5px;
+       text-wrap: wrap;
 }
 
 #view__subs {
@@ -251,6 +264,10 @@
        font-family: 'arial', sans-serif;
        font-size: 12px;
        font-weight: 400;
+       color: #696666;
+       margin: 2px 0px;
+       padding-bottom: 10px;
+       padding-left: 5px;
 }
 
 .fa-ellipsis-vertical {
@@ -276,7 +293,6 @@ h3 {
 
 .video_shorts {
        display: flex;
-       
 }
 
 .iframe {
@@ -284,19 +300,45 @@ h3 {
        justify-content: flex-start;
        gap: .5rem;
        padding-left: 15px;
+       padding-bottom: 15px;
 }
 
-
+.yt__banner2 {
+       display: flex;
+       margin-top: 10px;
+}
 
 /* ------- Footer ------ */
-.footer {
-       margin-top: 50vh;
+
+footer {
+       padding: 20px 5px 20px 5px;
+       width: 100%; 
+       flex: 1;      
 }
 
-.yt__footer {
+.footer__container {
+       
+   }
+
+.yt__footer {       
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+	
+}
+
+.bar__footer {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 11px;
+       font-weight: 300;
        display: flex;
-       flex-direction: row;
-       justify-content: space-around;
        align-items: center;
+       justify-content: space-around;
 }
 
+
+
+
+
+ 
+  

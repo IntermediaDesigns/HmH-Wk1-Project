@@ -114,12 +114,27 @@
     color: #ffffff;
   }
 
+  #bar__btn2a {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
+  #bar__btn2b {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
+  #bar__btn2c {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
   h3 {
     color: #ffffff;
   }
 
   .ytuber__nav {
-    border-bottom: #3e3d3d solid 5px;
+    border-bottom: #3e3d3d solid 3px;
   }
   .bar__footer {
     color: #ffffff;
@@ -267,6 +282,11 @@
   margin-top: 95px;
 }
 
+.yt__banner2 {
+  display: flex;
+  padding-top: 25px;
+}
+
 #ytuber {
   object-fit: cover;
   width: 100%;
@@ -274,9 +294,10 @@
 
 .ytuber__nav {
   display: flex;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 0px 5px 0px;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 
 .yt__left {
@@ -518,7 +539,8 @@ p {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .yt__info {
     display: flex;
@@ -562,7 +584,8 @@ p {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin-left: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .yt__info {
     display: flex;
@@ -589,10 +612,19 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-}
+  
+  .body {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /* Extra large devices (large laptops and desktops, 1200px and up to 1920px) */
 @media only screen and (min-width: 1200px) {
+  .body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .video__shorts {
     display: flex;
     justify-content: center;
@@ -606,7 +638,8 @@ p {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin-left: 570px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .yt__info {
     display: flex;

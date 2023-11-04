@@ -7,7 +7,6 @@
 .body {
   margin: 0;
   padding: 0;
-  
 }
 
 /* Light Mode */
@@ -43,6 +42,21 @@
   }
 
   #bar__btn2b {
+    background-color: #e8e8e8;
+    color: #0f0f0f;
+  }
+
+  #bar__btn2c {
+    background-color: #e8e8e8;
+    color: #0f0f0f;
+  }
+
+  #bar__btn2e {
+    background-color: #e8e8e8;
+    color: #0f0f0f;
+  }
+
+  #bar__btn2f {
     background-color: #e8e8e8;
     color: #0f0f0f;
   }
@@ -216,6 +230,33 @@
   text-decoration: none;
 }
 
+#bar__btn2c {
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+#bar__btn2e {
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+#bar__btn2f {
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
 /* YouTube Video */
 .youtube__vid {
   display: flex;
@@ -377,7 +418,11 @@ p {
     display: none;
   }
 
-  #bar__btn2d {
+  #bar__btn2e {
+    display: none;
+  }
+
+  #bar__btn2f {
     display: none;
   }
 
@@ -389,17 +434,12 @@ p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 599px) {
   #bar__btn2b {
     display: none;
   }
-  
-  #bar__btn2c {
-    display: none;
-  }
 
-  #bar__btn2d {
+  #bar__btn2c {
     display: none;
   }
 
@@ -425,16 +465,8 @@ p {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up to 767px) */
+/* Small devices (portrait tablets and large phones, 601px and up to 767px) */
 @media only screen and (min-width: 600px) {
-  #bar__btn2c {
-    display: none;
-  }
-
-  #bar__btn2d {
-    display: none;
-  }
-
   .video__shorts {
     display: flex;
     justify-content: flex-start;
@@ -462,7 +494,6 @@ p {
 
   #ytuber {
     border-radius: 10px;
-    
   }
 
   .yt__banner2 {
@@ -474,11 +505,6 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) {
-
-  #bar__btn2d {
-    display: none;
-  }
-
   .video__shorts {
     display: flex;
     justify-content: flex-start;
@@ -490,7 +516,9 @@ p {
 
   .ytuber__nav {
     display: flex;
+    width: 700px;
     justify-content: space-between;
+    margin-left: 120px;
   }
   .yt__info {
     display: flex;
@@ -499,18 +527,21 @@ p {
   }
 
   .yt__banner {
-    width: 700px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .yt__right {
+    display: flex;
+  }
+
   #ytuber {
     border-radius: 10px;
-    
   }
 
   .yt__banner2 {
-    width: 700px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -518,8 +549,88 @@ p {
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */
 @media only screen and (min-width: 992px) {
+  .video__shorts {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .iframe {
+    gap: 1rem;
+  }
+
+  .ytuber__nav {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    margin-left: 220px;
+  }
+  .yt__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yt__banner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yt__right {
+    display: flex;
+  }
+
+  #ytuber {
+    border-radius: 10px;
+  }
+
+  .yt__banner2 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up to 1920px) */
 @media only screen and (min-width: 1200px) {
+  .video__shorts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iframe {
+    gap: 1rem;
+  }
+
+  .ytuber__nav {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    margin-left: 570px;
+  }
+  .yt__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yt__banner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yt__right {
+    display: flex;
+  }
+
+  #ytuber {
+    border-radius: 10px;
+  }
+
+  .yt__banner2 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

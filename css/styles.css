@@ -7,6 +7,7 @@
 .body {
   margin: 0;
   padding: 0;
+  
 }
 
 /* Light Mode */
@@ -305,14 +306,15 @@ h3 {
 
 .video_shorts {
   display: flex;
+  scroll-behavior: smooth;
 }
 
 .iframe {
   display: flex;
-  justify-content: flex-start;
   gap: 0.5rem;
   padding-left: 15px;
   padding-bottom: 15px;
+  overflow-x: auto;
 }
 
 .yt__banner2 {
@@ -367,6 +369,23 @@ p {
   #bar__btn2a {
     display: none;
   }
+
+  #bar__btn2b {
+    display: none;
+  }
+  #bar__btn2c {
+    display: none;
+  }
+
+  #bar__btn2d {
+    display: none;
+  }
+
+  .iframe {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -375,14 +394,24 @@ p {
   #bar__btn2b {
     display: none;
   }
+  
+  #bar__btn2c {
+    display: none;
+  }
+
+  #bar__btn2d {
+    display: none;
+  }
 
   .video__shorts {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .iframe {
-    gap: 2.5rem;
+    gap: 1rem;
+    display: flex;
+    align-items: flex-start;
   }
 
   .ytuber__nav {
@@ -402,13 +431,17 @@ p {
     display: none;
   }
 
+  #bar__btn2d {
+    display: none;
+  }
+
   .video__shorts {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .iframe {
-    gap: 2.5rem;
+    gap: 1rem;
   }
 
   .ytuber__nav {
@@ -423,16 +456,64 @@ p {
 
   .yt__banner {
     width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #ytuber {
     border-radius: 10px;
     
   }
+
+  .yt__banner2 {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) {
+
+  #bar__btn2d {
+    display: none;
+  }
+
+  .video__shorts {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .iframe {
+    gap: 1rem;
+  }
+
+  .ytuber__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .yt__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yt__banner {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ytuber {
+    border-radius: 10px;
+    
+  }
+
+  .yt__banner2 {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */

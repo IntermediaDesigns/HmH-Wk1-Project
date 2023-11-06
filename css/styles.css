@@ -455,7 +455,7 @@ p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 615px) {
   #bar__btn2b {
     display: none;
   }
@@ -486,8 +486,10 @@ p {
   }
 }
 
+
 /* Small devices (portrait tablets and large phones, 601px and up to 767px) */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 615px) {
+
   .video__shorts {
     display: flex;
     justify-content: flex-start;
@@ -524,6 +526,7 @@ p {
     margin-right: auto;
   }
 }
+
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) {
